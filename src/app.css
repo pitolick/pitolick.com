@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+    font-family: 'Noto Sans JP';
+    src: local('Noto Sans JP'), url('/fonts/NotoSansJP-VariableFont_wght.ttf');
+    font-display: swap;
+	}
+}
