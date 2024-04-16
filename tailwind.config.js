@@ -3,6 +3,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: ['./src/**/*.{html,js,ts,svelte}'],
+  darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     container: {
       center: true,
