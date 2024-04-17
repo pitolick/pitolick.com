@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Custom CSS
+ */
 @layer base {
 	@font-face {
-    font-family: 'Noto Sans JP';
-    src: local('Noto Sans JP'), url('/fonts/NotoSansJP-VariableFont_wght.ttf');
-    font-display: swap;
+		font-family: 'Noto Sans JP';
+		src: local('Noto Sans JP'), url('/fonts/NotoSansJP-VariableFont_wght.ttf');
+		font-display: swap;
+	}
+}
+
+/**
+ * Extracting classes
+ */
+@layer components {
+	/**
+		* グラデーション
+		*/
+	.bg-gradient-primary {
+		background-image: linear-gradient(to right top, #5b51b2, #0075cc, #0090c9, #00a5b2, #2cb696);
+		background-repeat: no-repeat;
 	}
 }
