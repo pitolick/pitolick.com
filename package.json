@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "run-p dev:svelte storybook",
+		"dev": "run-p dev:svelte test:ui storybook",
 		"dev:svelte": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
