@@ -1,5 +1,5 @@
 <script>
-	import Heading from '$lib/components/elements/Heading/Heading.svelte';
+	import { Heading } from '$lib/components/elements';
 </script>
 
 <h1 class="text-5xl text-black after:">Welcome to SvelteKit</h1>
