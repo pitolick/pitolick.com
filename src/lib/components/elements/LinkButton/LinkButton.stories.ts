@@ -1,15 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
 import LinkButton from './LinkButton.svelte';
-import { text } from '@sveltejs/kit';
 
 const meta = {
 	title: 'Components/LinkButton',
 	component: LinkButton,
 	tags: ['autodocs'],
 	argTypes: {
-		tag: {
+		targetLink: {
 			control: { type: 'select' },
-			options: ['h2', 'h3', 'h4', 'h5', 'h6']
+			options: ['', '_self', '_blank', '_parent', '_top']
 		}
 	}
 } satisfies Meta<LinkButton>;
