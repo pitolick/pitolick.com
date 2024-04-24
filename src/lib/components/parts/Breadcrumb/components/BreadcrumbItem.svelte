@@ -1,0 +1,43 @@
+<script lang="ts">
+	export let home: boolean = false;
+	export let href: string | undefined = undefined;
+	export let index: number;
+</script>
+
+<li
+	itemprop="itemListElement"
+	itemscope
+	itemtype="https://schema.org/ListItem"
+	class="inline-flex list-none items-center justify-center"
+>
+	<a itemprop="item" {href} class="inline-flex items-center justify-center"
+		><span>
+			{#if home}
+				<svg
+					class="me-2.5 h-3 w-3"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+				>
+					<path
+						d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+					/>
+				</svg>
+			{:else}
+				<svg
+					class="mx-1 size-5 flex-shrink-0"
+					width="16"
+					height="16"
+					viewBox="0 0 16 16"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+				>
+					<path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"></path>
+				</svg>
+			{/if}
+		</span><span itemprop="name"><slot></slot></span></a
+	>
+	<meta itemprop="position" content={String(index)} />
+</li>
