@@ -1,9 +1,6 @@
 /**
  * LinkButtonコンポーネントのテスト
  */
-import '@testing-library/svelte/vitest';
-import '@testing-library/jest-dom/vitest';
-
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import LinkButton from './LinkButton.svelte';

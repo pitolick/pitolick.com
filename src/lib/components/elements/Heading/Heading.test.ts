@@ -1,9 +1,6 @@
 /**
  * Headingコンポーネントのテスト
  */
-import '@testing-library/svelte/vitest';
-import '@testing-library/jest-dom/vitest';
-
 import { describe, expect, test } from 'vitest';
 import { render, screen, within } from '@testing-library/svelte';
 import Heading from './Heading.svelte';

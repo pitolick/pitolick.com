@@ -1,9 +1,6 @@
 /**
  * SiteCardコンポーネントのテスト
  */
-import '@testing-library/svelte/vitest';
-import '@testing-library/jest-dom/vitest';
-
 import { describe, expect, test } from 'vitest';
 import { render, screen, within } from '@testing-library/svelte';
 import SiteCard from './SiteCard.svelte';
