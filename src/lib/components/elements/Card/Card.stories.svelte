@@ -28,7 +28,7 @@
 			width: 150,
 			height: 150
 		}}
-		title="Card Title">slot text</Card
+		title="Card Title"><p>slot text</p></Card
 	></Story
 >
 
@@ -40,6 +40,6 @@
 			width: 100,
 			height: 100
 		}}
-		title="Card Title">slot text</Card
+		title="Card Title"><p>slot text</p></Card
 	></Story
 >
