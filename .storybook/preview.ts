@@ -1,10 +1,10 @@
 import type { Preview } from '@storybook/svelte';
 import '../src/app.css';
 
-import { withThemeByClassName } from "@storybook/addon-themes";
+import { withThemeByClassName } from '@storybook/addon-themes';
 
 const preview: Preview = {
-    parameters: {
+	parameters: {
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
@@ -13,14 +13,16 @@ const preview: Preview = {
 		}
 	},
 
-    decorators: [withThemeByClassName({
-        themes: {
-            // nameOfTheme: 'classNameForTheme',
-            light: 'light',
-            dark: 'dark',
-        },
-        defaultTheme: 'light',
-    })]
+	decorators: [
+		withThemeByClassName({
+			themes: {
+				// nameOfTheme: 'classNameForTheme',
+				light: 'light',
+				dark: 'dark'
+			},
+			defaultTheme: 'light'
+		})
+	]
 };
 
 export default preview;
