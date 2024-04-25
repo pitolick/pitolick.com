@@ -1,9 +1,11 @@
 <script>
 	import { Heading } from '$lib/components/elements';
+	import MainVisual from '$lib/components/parts/MainVisual/MainVisual.svelte';
+	import src from '$lib/assets/images/pages/index/mainv-bg.jpg';
 </script>
 
 <div class="bg-gray-300">
-	<br />
+	<MainVisual {src}>{src}</MainVisual> <br />
 	<br />
 	<br />
 	<br />
