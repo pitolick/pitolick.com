@@ -23,6 +23,11 @@ export const createBreadcrumb = (pathname: string) => {
 		if (index > 1) {
 			path = swap_paths[index - 1]['path'] + path;
 		}
+
+		// パスが存在しない場合は処理を終了
+		if (!tdk[path]) {
+			return;
+		}
 		swap_paths.push({ path, name: tdk[path]['title'] });
 	});
 

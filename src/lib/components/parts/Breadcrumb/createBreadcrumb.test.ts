@@ -24,24 +24,37 @@ vi.mock('$lib/config', () => {
 	};
 });
 
+type Breadcrumb = {
+	path: string;
+	name: string;
+}[];
+
 describe('createBreadcrumb', () => {
 	test('対応する名前を持つパスの配列を返す', () => {
 		const pathname = '/example/child';
-		const expected = [
+		const expected: Breadcrumb = [
 			{ path: '/', name: 'Home' },
 			{ path: '/example', name: 'Example Title' },
 			{ path: '/example/child', name: 'Example Child Title' }
 		];
 
 		const result = createBreadcrumb(pathname);
-		console.log(result);
 
 		expect(result).toEqual(expected);
 	});
 
 	test('pathnameが空の場合、トップページの配列を返す', () => {
 		const pathname = '';
-		const expected = [{ path: '/', name: 'Home' }];
+		const expected: Breadcrumb = [{ path: '/', name: 'Home' }];
+
+		const result = createBreadcrumb(pathname);
+
+		expect(result).toEqual(expected);
+	});
+
+	test('tdkに対応するパスがない場合、トップページの配列を返す', () => {
+		const pathname = '/notfound';
+		const expected: Breadcrumb = [{ path: '/', name: 'Home' }];
 
 		const result = createBreadcrumb(pathname);
 

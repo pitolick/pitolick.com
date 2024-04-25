@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import Navigation from './components/Navigation.svelte';
 	import logo from '$lib/assets/images/logo/1x/logo_white.png';
+	import { Breadcrumb } from '$lib/components/parts';
 
 	// トップページはロゴをh1タグで表示
 	$: logoTag = $page?.url.pathname === '/' ? 'h1' : 'p';
@@ -16,4 +17,10 @@
 		</div>
 		<div><Navigation /></div>
 	</div>
+
+	{#if $page && $page.url.pathname !== '/'}
+		<div class="container">
+			<Breadcrumb />
+		</div>
+	{/if}
 </header>

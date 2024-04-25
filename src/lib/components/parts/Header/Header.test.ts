@@ -2,7 +2,7 @@
  * Headerコンポーネントのテスト
  */
 import { describe, expect, test, vi } from 'vitest';
-import { render, screen } from '@testing-library/svelte';
+import { render, screen, within } from '@testing-library/svelte';
 import Header from './Header.svelte';
 
 // $app/storesのモック化
@@ -24,31 +24,29 @@ vi.mock('$app/stores', () => {
 });
 
 // Navigationコンポーネントのモック化
-vi.mock('$lib/components/parts/Navigation/Navigation', () => {
-	return {
-		default: {
-			render: vi.fn().mockReturnValue(null)
-		}
-	};
-});
+vi.mock('./components/Navigation.svelte');
+
+// Breadcrumbコンポーネントのモック化
+vi.mock('$lib/components/parts/Breadcrumb/Breadcrumb.svelte');
 
 describe('Headerコンポーネント', () => {
 	test('Headerコンポーネントが正しく動作すること', () => {
 		render(Header);
 
-		const heading = screen.getByRole('heading');
-		const navigation = screen.getByRole('navigation');
+		const header = screen.getByRole('banner');
+		const heading = within(header).getByRole('heading', { name: 'ぴいてっく' });
 
+		expect(header).toBeInTheDocument();
 		expect(heading).toBeInTheDocument();
-		expect(navigation).toBeInTheDocument();
 	});
 
 	test('ロゴのタグがpタグに変わっていること', () => {
 		render(Header);
 
-		const banner = screen.getByRole('banner');
+		const header = screen.getByRole('banner');
+		console.log('header', header.innerHTML);
 
 		// h1タグがpタグに変わっている
-		expect(banner.querySelector('p a img')).toBeInTheDocument();
+		expect(header.querySelector('p a img')).toBeInTheDocument();
 	});
 });
