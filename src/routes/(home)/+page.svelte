@@ -1,8 +1,9 @@
 <script>
-	import { MainVisual, Work, About, Product } from './components';
+	import { MainVisual, Work, About, Product, Contact } from './components';
 </script>
 
 <MainVisual />
 <Work />
 <About />
 <Product />
+<Contact />
