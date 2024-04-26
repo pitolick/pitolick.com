@@ -18,10 +18,29 @@
  */
 @layer components {
 	/**
-		* グラデーション
-		*/
+	 * グラデーション
+	 */
 	.bg-gradient-primary {
 		background-image: linear-gradient(to right top, #5b51b2, #0075cc, #0090c9, #00a5b2, #2cb696);
 		background-repeat: no-repeat;
+	}
+
+	/**
+	 * ふわふわアニメーション
+	 */
+	.animate-float {
+		animation: float 3s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-12px);
+		}
+		100% {
+			transform: translateY(0);
+		}
 	}
 }

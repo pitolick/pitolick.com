@@ -8,7 +8,7 @@
 	$: logoTag = $page?.url.pathname === '/' ? 'h1' : 'p';
 </script>
 
-<header id="header" class="absolute left-0 right-0 top-0 z-10">
+<header id="header" class="absolute left-0 right-0 top-0 z-20">
 	<div class="container relative flex items-center justify-between py-2 md:py-4">
 		<div>
 			<svelte:element this={logoTag}>
