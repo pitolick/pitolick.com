@@ -17,7 +17,7 @@
 			>
 		</div>
 
-		<ul class="grid gap-4 md:grid-cols-2">
+		<ul class="animate-fade-up grid gap-4 md:grid-cols-2">
 			<li class="grid items-stretch">
 				<Card
 					img={{ src: website, alt: 'Webサイト開発', width: 180, height: 137 }}

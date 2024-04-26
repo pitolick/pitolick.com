@@ -8,7 +8,7 @@
 			<Heading>ぴいてっくに相談する</Heading>
 		</div>
 		<div
-			class="flex max-w-6xl flex-col items-center justify-center gap-4 border border-gray-300 bg-gray-100 p-6"
+			class="animate-fade-up flex max-w-6xl flex-col items-center justify-center gap-4 border border-gray-300 bg-gray-100 p-6"
 		>
 			<div class="flex flex-col gap-2 text-center">
 				<p>

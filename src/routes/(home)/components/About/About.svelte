@@ -19,7 +19,8 @@
 		<div>
 			<Heading>ぴいてっくはこんな人</Heading>
 		</div>
-		<div class="flex flex-col items-center justify-center gap-6 md:flex-row">
+
+		<div class="animate-fade-up flex flex-col items-center justify-center gap-6 md:flex-row">
 			<div class="flex flex-col items-center justify-center gap-4">
 				<div class="flex items-center justify-center">
 					<img src={MyPicture} alt="ぴいてっく" class="h-auto w-44 rounded-full" />
