@@ -1,9 +1,12 @@
 /**
  * MainVisualコンポーネントのテスト
  */
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test, vi } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import MainVisual from './MainVisual.svelte';
+
+// MainVisualコンポーネントをモック化
+vi.mock('$lib/components/parts/MainVisual/MainVisual.svelte');
 
 describe('MainVisualコンポーネント', () => {
 	test('MainVisualコンポーネントが正しく動作すること', () => {

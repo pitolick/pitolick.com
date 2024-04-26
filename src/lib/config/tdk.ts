@@ -9,7 +9,7 @@ type TDK = {
 	keywords?: string;
 };
 
-export const tdk: Record<PathKeys, TDK> = {
+export const tdk: { [key: PathKeys]: TDK } = {
 	'/': {
 		title: 'Home'
 		// description: 'description',
