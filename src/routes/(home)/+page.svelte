@@ -1,9 +1,10 @@
 <script>
 	import { Heading } from '$lib/components/elements';
-	import { MainVisual } from './components';
+	import { MainVisual, Work } from './components';
 </script>
 
 <MainVisual />
+<Work />
 
 <h1 class="after: text-5xl text-black">Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
