@@ -1,8 +1,8 @@
 <script>
-	import { Heading } from '$lib/components/elements';
-	import { MainVisual, Work, About } from './components';
+	import { MainVisual, Work, About, Product } from './components';
 </script>
 
 <MainVisual />
 <Work />
 <About />
+<Product />

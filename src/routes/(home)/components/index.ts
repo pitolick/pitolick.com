@@ -3,3 +3,4 @@
 export { default as MainVisual } from './MainVisual/MainVisual.svelte';
 export { default as Work } from './Work/Work.svelte';
 export { default as About } from './About/About.svelte';
+export { default as Product } from './Product/Product.svelte';
