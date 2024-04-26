@@ -17,5 +17,8 @@ export const tdk: { [key: PathKeys]: TDK } = {
 	},
 	'/contact': {
 		title: 'お問い合わせ'
+	},
+	'/privacy-policy': {
+		title: 'プライバシーポリシー'
 	}
 };

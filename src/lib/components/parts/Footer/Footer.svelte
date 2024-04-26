@@ -4,14 +4,15 @@
 		href: string;
 	}[] = [
 		{ name: 'ホーム', href: '/' },
-		{ name: 'お問い合わせ', href: '/contact' }
+		{ name: 'お問い合わせ', href: '/contact' },
+		{ name: 'プライバシーポリシー', href: '/privacy-policy' }
 	];
 </script>
 
 <footer id="footer" class="mt-auto bg-primary py-3">
 	<div class="container flex flex-col items-center gap-1 text-white">
 		<nav>
-			<ul class="flex flex-col gap-2 divide-y text-white md:flex-row md:divide-none">
+			<ul class="flex flex-wrap justify-center gap-2 text-white md:flex-row">
 				{#each navList as { name, href }}
 					<li>
 						<a {href}>{name}</a>
