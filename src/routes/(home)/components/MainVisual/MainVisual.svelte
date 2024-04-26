@@ -1,7 +1,7 @@
 <script lang="ts">
 	import MainVisual from '$lib/components/parts/MainVisual/MainVisual.svelte';
-	import src from '$lib/assets/images/pages/index/mainv-bg.jpg';
-	import mainImage from '$lib/assets/images/pages/index/mainv.png';
+	import src from '$lib/assets/images/pages/home/mainv-bg.jpg';
+	import mainImage from '$lib/assets/images/pages/home/mainv.png';
 </script>
 
 <MainVisual {src}>

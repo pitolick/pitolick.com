@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	import MainVisual from './MainVisual.svelte';
-	import src from '$lib/assets/images/pages/index/mainv-bg.jpg';
+	import src from '$lib/assets/images/pages/home/mainv-bg.jpg';
 
 	export const meta = {
 		title: 'Parts/MainVisual',
