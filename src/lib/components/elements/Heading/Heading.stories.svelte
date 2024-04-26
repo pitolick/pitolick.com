@@ -34,6 +34,10 @@
 	<Heading tag="h2">h2 text</Heading>
 </Story>
 
+<Story name="h2 Wide">
+	<Heading tag="h2" style="wide">h2 text</Heading>
+</Story>
+
 <Story name="h3">
 	<Heading tag="h3">h3 text</Heading>
 </Story>

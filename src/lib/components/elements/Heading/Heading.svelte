@@ -1,10 +1,14 @@
 <script lang="ts">
 	export let tag: 'h2' | 'h3' | 'h4' | 'h5' | 'h6' = 'h2';
+	export let style: 'wide' | undefined = undefined;
 
 	let className = 'font-bold';
 	switch (tag) {
 		case 'h2':
-			className += ' text-2xl text-center inline-block px-2 pb-2 border-b-4 border-primary';
+			className += ' text-2xl  px-2 pb-2 border-b-4 border-primary';
+			style === 'wide'
+				? (className += ' block text-left')
+				: (className += ' inline-block text-center');
 			break;
 		case 'h3':
 			className +=
