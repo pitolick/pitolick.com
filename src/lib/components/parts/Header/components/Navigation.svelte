@@ -8,7 +8,17 @@
 	export let navList: {
 		name: string;
 		href: string;
-	}[] = [{ name: 'Home', href: '/' }];
+		targetLink?: '' | '_self' | '_blank' | '_parent' | '_top';
+		rel?: string;
+	}[] = [
+		{
+			name: '技術ブログ',
+			href: 'https://blog.pitolick.com/',
+			targetLink: '_blank',
+			rel: 'noopener'
+		},
+		{ name: 'お問い合わせ', href: '/contact' }
+	];
 </script>
 
 <nav>
@@ -60,9 +70,9 @@
 			id="navbar-default"
 		>
 			<ul class="flex flex-col gap-x-2 divide-y text-white md:flex-row md:divide-none">
-				{#each navList as { name, href }}
+				{#each navList as { name, href, targetLink, rel }}
 					<li>
-						<a {href} class="block px-4 py-2">{name}</a>
+						<a {href} class="block px-4 py-2" target={targetLink} {rel}>{name}</a>
 					</li>
 				{/each}
 			</ul>

@@ -3,7 +3,7 @@
 <ol
 	itemscope
 	itemtype="https://schema.org/BreadcrumbList"
-	class="flex items-center justify-start text-white"
+	class="flex items-center justify-start text-xs text-white md:text-sm"
 >
 	<slot />
 </ol>

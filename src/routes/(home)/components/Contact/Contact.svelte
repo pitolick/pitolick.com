@@ -32,7 +32,7 @@
 				</p>
 			</div>
 			<div>
-				<LinkButton href="/" text="ぴいてっくに相談する" />
+				<LinkButton href="/contact" text="ぴいてっくに相談する" />
 			</div>
 		</div>
 	</div>

@@ -3,8 +3,8 @@
 		name: string;
 		href: string;
 	}[] = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Home', href: '/' }
+		{ name: 'ホーム', href: '/' },
+		{ name: 'お問い合わせ', href: '/contact' }
 	];
 </script>
 

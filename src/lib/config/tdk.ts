@@ -11,8 +11,11 @@ type TDK = {
 
 export const tdk: { [key: PathKeys]: TDK } = {
 	'/': {
-		title: 'Home'
+		title: 'ホーム'
 		// description: 'description',
 		// keywords: 'keywords'
+	},
+	'/contact': {
+		title: 'お問い合わせ'
 	}
 };
