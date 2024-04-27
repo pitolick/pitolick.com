@@ -8,7 +8,7 @@ const posts: Posts = [];
 type Pages = string[];
 const pages: Pages = Object.keys(tdk);
 
-const site = 'https://pitolick.com';
+const site = 'https://www.pitolick.com';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET() {
