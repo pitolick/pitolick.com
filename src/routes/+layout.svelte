@@ -1,8 +1,14 @@
 <script>
 	import '../app.css';
-	import { Head } from '$lib/components/elements';
+	import { Head, GoogleTagManagerBody, GoogleTagManagerHead } from '$lib/components/elements';
 	import { Header, Footer } from '$lib/components/parts';
 </script>
+
+<svelte:head>
+	<GoogleTagManagerHead />
+</svelte:head>
+
+<GoogleTagManagerBody />
 
 <Head />
 
