@@ -2,6 +2,9 @@
 	import '../app.css';
 	import { Head, GoogleTagManagerBody, GoogleTagManagerHead } from '$lib/components/elements';
 	import { Header, Footer } from '$lib/components/parts';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
 </script>
 
 <svelte:head>
