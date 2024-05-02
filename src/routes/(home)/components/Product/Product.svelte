@@ -26,9 +26,11 @@
 			>
 		</div>
 
-		<ul class="animate-fade-up flex w-full flex-row flex-wrap items-center justify-center gap-6">
+		<ul class="flex w-full animate-fade-up flex-row flex-wrap items-center justify-center gap-6">
 			{#each sites as site}
-				<SiteCard title={site.title} url={site.url}><p>{site.description}</p></SiteCard>
+				<li>
+					<SiteCard title={site.title} url={site.url}><p>{site.description}</p></SiteCard>
+				</li>
 			{/each}
 		</ul>
 	</div>
