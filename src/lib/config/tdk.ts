@@ -20,5 +20,8 @@ export const tdk: { [key: PathKeys]: TDK } = {
 	},
 	'/privacy-policy': {
 		title: 'プライバシーポリシー'
+	},
+	'/commerce-law': {
+		title: '特定商取引法に基づく表記'
 	}
 };

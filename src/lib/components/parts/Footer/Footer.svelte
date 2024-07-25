@@ -5,7 +5,8 @@
 	}[] = [
 		{ name: 'ホーム', href: '/' },
 		{ name: 'お問い合わせ', href: '/contact' },
-		{ name: 'プライバシーポリシー', href: '/privacy-policy' }
+		{ name: 'プライバシーポリシー', href: '/privacy-policy' },
+		{ name: '特定商取引法に基づく表記', href: '/commerce-law' }
 	];
 </script>
 
