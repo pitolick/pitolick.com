@@ -16,7 +16,7 @@
 		{
 			url: 'https://e-comi.pitolick.com',
 			title: 'ええこみ！',
-			description: '電子書籍のセール情報や新刊、おすすめ漫画を紹介するブログです。'
+			description: '漫画など電子書籍のセール情報ブログです。'
 		}
 	];
 </script>
