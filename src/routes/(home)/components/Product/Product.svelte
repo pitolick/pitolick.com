@@ -12,6 +12,11 @@
 			url: 'https://filmlog.pitolick.com',
 			title: 'フィルムログ',
 			description: '映画などのレビューブログです。'
+		},
+		{
+			url: 'https://e-comi.pitolick.com',
+			title: 'ええこみ！',
+			description: '電子書籍のセール情報や新刊、おすすめ漫画を紹介するブログです。'
 		}
 	];
 </script>
